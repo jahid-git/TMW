@@ -15,26 +15,26 @@ const Subscription = () => {
   const packages = [
     {
       time: '১ মাস',
-      money: '২৪৯৳',
-      name: '1 month 249TK',
+      money: '১৯৯৳',
+      name: '1 month 199TK',
       duration: 30
     },
     {
       time: '৩ মাস',
-      money: '৪৪৯৳',
-      name: '3 month 449TK',
+      money: '৩৯৯৳',
+      name: '3 month 399TK',
       duration: 90
     },
     {
       time: '৬ মাস',
-      money: '৭৪৯৳',
-      name: '6 month 749TK',
+      money: '৬৪৯৳',
+      name: '6 month 699TK',
       duration: 180
     },
     {
       time: '১ বছর',
-      money: '১১৯৯৳',
-      name: '1 year 1199TK',
+      money: '১০৯৯৳',
+      name: '1 year 1099TK',
       duration: 365
     }
   ]
