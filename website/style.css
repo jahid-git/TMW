@@ -1,0 +1,89 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #009688;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero {
+    background: #00695c;
+    color: white;
+    padding: 2rem;
+}
+
+.hero-content {
+    padding: 2rem;
+}
+
+.download-btn {
+    display: inline-block;
+    background: #ffa000;
+    color: #fff;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.download-btn:hover {
+    background: #ffb300;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.feature {
+    background: #eee;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+footer {
+    background: #263238;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 1rem;
+    }
+    .hero-content {
+        padding: 1rem;
+    }
+}
