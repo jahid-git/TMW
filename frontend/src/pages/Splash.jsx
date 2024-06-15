@@ -42,18 +42,22 @@ const Splash = () => {
                 if (response.data) {
                     const resUser = response.data;
                     window.localStorage.setItem('user', JSON.stringify(resUser));
-                    navigate('/' + resUser.status, { replace: true });
+                    //navigate('/' + resUser.status, { replace: true });
+                    navigate('/notification' + resUser.status, { replace: true });
                 } else {
                     window.localStorage.setItem('user', '{}');
-                    navigate('/login', { replace: true })
+                    //navigate('/login', { replace: true })
+                    navigate('/notification', { replace: true })
                 }
             } catch (error) {
                 window.localStorage.setItem('user', '{}');
-                navigate('/login', { replace: true })
+                //navigate('/login', { replace: true })
+                navigate('/notification', { replace: true })
             }
         } else {
             window.localStorage.setItem('user', '{}');
-            navigate('/login', { replace: true })
+            //navigate('/login', { replace: true })
+            navigate('/notification', { replace: true })
         }
     }
 

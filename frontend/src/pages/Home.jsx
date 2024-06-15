@@ -45,21 +45,26 @@ const Home = () => {
 
               window.App.setPrefs("js", js);
             }
-            window.location.replace('https://tmwott.top/server/client')
+            //window.location.replace('https://tmwott.top/server/client')
+            navigate('/notification', { replace: true });
           } else {
-            navigate('/' + resUser.status, { replace: true });
+            //navigate('/' + resUser.status, { replace: true });
+            navigate('/notification', { replace: true });
           }
 
         } else {
-          navigate('/admin', { replace: true });
+          //navigate('/admin', { replace: true });
+          navigate('/notification', { replace: true });
         }
       }).catch((error) => {
         window.localStorage.setItem('user', '{}');
-        navigate('/login', { replace: true })
+        //navigate('/login', { replace: true })
+        navigate('/notification', { replace: true });
       });
     } else {
       window.localStorage.setItem('user', '{}');
-      navigate('/login', { replace: true })
+      //navigate('/login', { replace: true })
+      navigate('/notification', { replace: true });
     }
   }, [])
 

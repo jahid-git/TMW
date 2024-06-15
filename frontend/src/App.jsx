@@ -10,6 +10,7 @@ import Profile from './pages/Profile'
 import Home from './pages/Home'
 import AdminPanel from './pages/AdminPanel'
 import ShowUser from './pages/ShowUser'
+import Notification from './pages/notification'
 
 const App = () => {
 
@@ -28,6 +29,7 @@ const App = () => {
           <Route exact path='/active' element={<Home />} />
           <Route exact path='/admin_panel' element={<AdminPanel />} />
           <Route exact path='/show_user' element={<ShowUser />} />
+          <Route exact path='/notification' element={<Notification />} />
         </Routes>
       </HashRouter>
     </>
