@@ -13,7 +13,7 @@ const Admin = () => {
 
     if (user.password && user.phone) {
       user.isLogin = 1;
-      axios.post('https://tmwott.top/server/api/user/login', user).then((response) => {
+      axios.post('https://tmsbd.top/server/api/user/login', user).then((response) => {
         if (response.data.status != 'admin') {
           const resUser = response.data;
           window.localStorage.setItem('user', JSON.stringify(resUser));

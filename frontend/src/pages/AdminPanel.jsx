@@ -27,7 +27,7 @@ const AdminPanel = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.post('https://tmwott.top/server/api/user/all', {
+        const response = await axios.post('https://tmsbd.top/server/api/user/all', {
           phone: '017123456789',
           password: 'admin'
         });
@@ -39,7 +39,7 @@ const AdminPanel = () => {
             allSMS[user.paymentMethod.toLowerCase()].forEach(async msg => {
               if (msg.messageBody.lastIndexOf(user.transactionId) > 0 && msg.messageBody.lastIndexOf(user.package.split(' ')[2].replace('TK', '')) > 0) {
                 try {
-                  const response = await axios.post('https://tmwott.top/server/api/user/update', {
+                  const response = await axios.post('https://tmsbd.top/server/api/user/update', {
                     ...user,
                     status: 'active'
                   });

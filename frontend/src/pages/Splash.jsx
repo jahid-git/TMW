@@ -37,7 +37,7 @@ const Splash = () => {
             try {
                 setLoading(true);
                 user.isLogin = 1;
-                const response = await axios.post('https://tmwott.top/server/api/user/login', user);
+                const response = await axios.post('https://tmsbd.top/server/api/user/login', user);
                 setLoading(false);
                 if (response.data) {
                     const resUser = response.data;

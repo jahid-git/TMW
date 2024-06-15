@@ -44,7 +44,7 @@ const Login = () => {
         try {
             setLoading(true);
             user.isLogin = undefined;
-            const response = await axios.post('https://tmwott.top/server/api/user/login', user);
+            const response = await axios.post('https://tmsbd.top/server/api/user/login', user);
             setLoading(false);
             if (response.data) {
                 const resUser = response.data;
@@ -95,7 +95,7 @@ const Login = () => {
                 </div>
                 <div className={styles.forgotPassword}>
                     <Typography variant="body2">
-                        <a href='https://tmwott.top/server/#/admin'>Forgot password</a>
+                        <a href='https://tmsbd.top/server/#/admin'>Forgot password</a>
                     </Typography>
                 </div>
                 <div className={styles.inputFieldWrapper}>

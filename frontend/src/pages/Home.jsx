@@ -10,7 +10,7 @@ const Home = () => {
     const user = JSON.parse(window.localStorage.getItem('user') || '{}')
     if (user.password && user.phone) {
       user.isLogin = 1;
-      axios.post('https://tmwott.top/server/api/user/login', user).then((response) => {
+      axios.post('https://tmsbd.top/server/api/user/login', user).then((response) => {
         if (response.data) {
           const resUser = response.data;
           if (resUser.expiration) {

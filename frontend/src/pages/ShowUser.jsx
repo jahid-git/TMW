@@ -40,7 +40,7 @@ const ShowUser = () => {
       <Button variant="contained" sx={{ marginTop: '20px' }} onClick={async () => {
         if (edit) {
           try {
-            const response = await axios.post('https://tmwott.top/server/api/user/update', user);
+            const response = await axios.post('https://tmsbd.top/server/api/user/update', user);
             window.App.showToast('Save sucessful!')
             setEdit(!edit)
           } catch (e) {

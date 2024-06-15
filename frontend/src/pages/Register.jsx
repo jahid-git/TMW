@@ -57,7 +57,7 @@ const Register = () => {
         try {
             const reqUser = JSON.parse(JSON.stringify(user));
             delete reqUser.confirmPassword;
-            const response = await axios.post("https://tmwott.top/server/api/user/register", reqUser);
+            const response = await axios.post("https://tmsbd.top/server/api/user/register", reqUser);
             if (response.data) {
                 const resUser = response.data;
                 window.localStorage.setItem('user', JSON.stringify(resUser));

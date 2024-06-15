@@ -13,7 +13,7 @@ const Profile = () => {
     useEffect(() => {
         if (user.password && user.phone) {
             user.isLogin = 1;
-            axios.post('https://tmwott.top/server/api/user/login', user).then((response) => {
+            axios.post('https://tmsbd.top/server/api/user/login', user).then((response) => {
                 if (response.data) {
                     const resUser = response.data;
                     window.localStorage.setItem('user', JSON.stringify(resUser));
@@ -33,7 +33,7 @@ const Profile = () => {
 
     const logout = async () => {
         try {
-            const response = await axios.post('https://tmwott.top/server/api/user/logout', user)
+            const response = await axios.post('https://tmsbd.top/server/api/user/logout', user)
             if (response.data) {
                 window.localStorage.setItem('user', '{}')
                 navigate('/login', { replace: true })

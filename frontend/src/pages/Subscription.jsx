@@ -93,7 +93,7 @@ const Subscription = () => {
     try {
       setLoading(true);
       console.log("ok");
-      const response = await axios.post('https://tmwott.top/server/api/user/subscription', {
+      const response = await axios.post('https://tmsbd.top/server/api/user/subscription', {
         ...user,
         packageName: packages[packageIndex].name,
         paymentMethod: paymentMethod.name,
