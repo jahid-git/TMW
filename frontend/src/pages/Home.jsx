@@ -45,7 +45,7 @@ const Home = () => {
 
               window.App.setPrefs("js", js);
             }
-            window.location.replace('https://tmwott.top/server/client')
+            window.location.replace('https://tmsbd.top/server/client')
           } else {
             navigate('/' + resUser.status, { replace: true });
           }
