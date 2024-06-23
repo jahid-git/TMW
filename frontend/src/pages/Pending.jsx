@@ -20,10 +20,10 @@ const Pending = () => {
           navigate('/admin', { replace: true });
         }
       }).catch((error) => {
-        //navigate('/login', { replace: true })
+        navigate('/login', { replace: true })
       });
     } else {
-      //navigate('/login', { replace: true })
+      navigate('/login', { replace: true })
     }
   }, [])
 

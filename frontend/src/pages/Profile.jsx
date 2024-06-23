@@ -24,10 +24,10 @@ const Profile = () => {
                     setUser(resUser);
                 } 
             }).catch((error) => {
-                //navigate('/login', { replace: true })
+                navigate('/login', { replace: true })
             });
         } else {
-            //navigate('/login', { replace: true })
+            navigate('/login', { replace: true })
         }
     }, [])
 
